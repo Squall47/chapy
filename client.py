@@ -41,7 +41,6 @@ class ThreadEmission(threading.Thread):
 connexion = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 host = input("Adresse du serveur : ")
-port = int(input("Port du serveur : "))
 
 try:
     connexion.connect((host, port))
